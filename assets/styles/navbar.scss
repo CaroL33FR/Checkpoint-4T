@@ -1,0 +1,47 @@
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  background-color: #944646;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  background-color: #944646;
+}
+
+.nav-item {
+  background-color: #944646;
+}
+
+.ckpt4-button-accessibility, .ckpt4-button-disconnection {
+  border-radius: 20px;
+  width: 10%;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 35px;
+}
+
+.ckpt4-button-accessibility:hover, .ckpt4-button-disconnection:hover {
+  border: solid 2px pink;
+  background-color: blue;
+}
+
+.ckpt4-button-disconnection {
+  border: solid 2px yellow;
+  background-color: green;
+}
+
+.ckpt4-button-accessibility {
+  border: solid 2px gray;
+  background-color: red;
+}
+
+/* RESPONSIVENESS */
+@media screen and (min-width: 576px) {
+  .dropdown {
+    display: none
+  }
+}
