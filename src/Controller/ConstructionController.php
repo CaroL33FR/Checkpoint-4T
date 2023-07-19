@@ -11,7 +11,7 @@ class ConstructionController extends AbstractController
     #[Route('/construction', name: 'app_construction')]
     public function index(): Response
     {
-        return $this->render('construction.html.twig', [
+        return $this->render('construction/index.html.twig', [
             'controller_name' => 'ConstructionController',
         ]);
     }
