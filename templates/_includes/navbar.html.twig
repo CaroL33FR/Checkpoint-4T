@@ -9,7 +9,7 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{ path('app_home') }}">
                 <img class="ws-logo" src="{{ asset('build/images/test_logo_unsplash.jpg') }}" alt="Logo"/>Wild Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -18,11 +18,11 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item-home">
                         <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16" >
-
                             </svg>
                         </a>
 
                     </li>
+            {# STARTS: "NOUS" TAB #}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             NOUS
@@ -33,6 +33,8 @@
                             <li><a class="dropdown-item" href="#">Nos équipes</a></li>
                         </ul>
                     </li>
+            {# STARTS: "NOUS" TAB #}
+            {# STARTS: "VOUS" TAB #}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             VOUS
@@ -50,6 +52,8 @@
                             <li><a class="dropdown-item" href="#">Les soins et les services</a></li>
                         </ul>
                     </li>
+            {# ENDS: "VOUS" TAB #}
+            {# STARTS: "CONTACT" TAB #}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             CONTACT
@@ -59,6 +63,8 @@
                             <li><a class="dropdown-item" href="#">Nous écrire</a></li>
                         </ul>
                     </li>
+            {# ENDS: "VOUS" TAB #}
+            {# STARTS: "ADMISSION" TAB #}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             ADMISSION
@@ -69,8 +75,11 @@
                             <li><a class="dropdown-item" href="#">...</a></li>
                         </ul>
                     </li>
+            {# ENDS: "ADMISSION" TAB #}
                 </ul>
+
     <!-- Search form with sign up & sign in links below -->
+                <h1 class="ckpt4-button-disconnection"><a href="#">DÉCONNEXION</a></h1>
                 <h1 class="ckpt4-button-accessibility"><a href="#">ACCESSIBILITÉ</a></h1>
             </div>
         </div>
