@@ -5,19 +5,18 @@
     <title>{% block title %}En construction{% endblock %}</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
 
-
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
     {% endblock %}
-
 
 {% block body %}
 
     <div class="construction">
         <h1>EN CONSTRUCTION</h1>
-        <h2>Cette page sera bientôt disponible</h2>
-        <a href="{{ path('app_home') }}">
-            <h3>Retour à l'accueil</h3></a>
+            <h2>Cette page sera bientôt disponible</h2>
+                <img src="{{ asset('build/images/logo_canvas.png') }}">
+            <a href="{{ path('app_home') }}">
+                <h3>Retour à l'accueil</h3></a>
     </div>
 
 {% endblock %}
