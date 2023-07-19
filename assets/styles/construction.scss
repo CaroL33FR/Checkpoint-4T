@@ -1,4 +1,55 @@
 .construction {
-  background-color: lightblue;
+  background-color: #2F2B2B;
+  color: #944646;
   text-align: center;
+}
+
+.construction h1 {
+  font-size: 3em;
+  padding: 20px;
+}
+
+.construction h2 {
+  font-size: 1.2em;
+  padding: 25px;
+}
+
+.construction h3 {
+  font-size: 1em;
+  padding: 25px;
+}
+
+.construction h3:hover {
+  font-size: 1.2em;
+}
+
+.construction img {
+  padding: 25px;
+  position: center;
+}
+
+/* RESPONSIVENESS */
+@media screen and (min-width: 576px) {
+  .construction h1 {
+    font-size: 6em;
+    padding: 40px;
+  }
+
+  .construction h2 {
+    font-size: 2.5em;
+    padding: 50px;
+  }
+
+  .construction h3 {
+    font-size: 2em;
+    padding: 50px;
+  }
+
+  .construction h3:hover {
+    font-size: 2.2em;
+  }
+
+  .construction img {
+    padding: 50px;
+  }
 }
