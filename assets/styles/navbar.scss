@@ -12,14 +12,19 @@
   width: 70px;
 }
 
-.navbar {
+.navbar.navbar-expand-lg.bg-body-tertiary {
   background-color: #944646;
 }
 
-.nav-item {
+.bg-body-tertiary {
   background-color: #944646;
 }
 
+/*
+.navbar, .nav-item {
+  background-color: #944646;
+}
+*/
 .ckpt4-button-accessibility, .ckpt4-button-disconnection {
   border-radius: 20px;
   width: 10%;
