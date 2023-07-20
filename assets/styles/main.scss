@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: darkgray;
+}
+
+/* HOME PAGE */
+.ckpt4-logo-card-img-top {
+
+}
+/*
+.ckpt4-ensemble {
+  height: 30vh;
+  width: 60%;
+  opacity: 45%;
+  background-size: cover;
+  background-position: center;
+}
+
+*/
+
+
+/* home page cards bootstrap customized */
+.ckpt4-row {
+  justify-content: center;
+}
+
+h5.ckpt4-card-title {
+  text-align: center;
+  margin: 0;
+  font-size: 3em;
+}
+
+div.card.text-center {
+  background-color: #2F2B2B;
+  border: solid 2px #944646;
+  border-radius: 10px;
+
+}
+
+a.ckpt4-ensemble.btn {
+  border: solid 1px grey;
+}
+
+.ckpt4-card-body {
+  background-color: pink;
+}
+
+.pagination {
+  position: fixed;
+  bottom: 25vh;
+
+}
+
+nav.pagination
+ {
+  text-align: center;
+}
+
+/* RESPONSIVENESS */
+@media screen and (min-width: 576px) {
+  h5.ckpt4-card-title {
+    font-size: 6em;
+  }
+
+  h5.footer .footer-contact {
+    font-size: 1.8em;
+  }
+}
