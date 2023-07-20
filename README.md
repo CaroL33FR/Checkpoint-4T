@@ -13,6 +13,7 @@ The project was set up with the console terminal command `symfony new my_project
 7. [x] `yarn add sass-loader@latest sass --dev`
 8. [x] in **webpack.config.js** **.enableSassLoader** is active.
 9. [x] `yarn watch` or `yarn dev-server`
+10.[x] `symfony server:start -d` or `symfony server:start -d`
 
 ********************************************
 ## Technical requirements
