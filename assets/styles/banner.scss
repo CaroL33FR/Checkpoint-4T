@@ -1,0 +1,47 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 6vh;
+  background-color: #C8DAA2;
+  color: #2F2B2B;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+/* TEXT */
+.banner-message {
+  font-size: 1.3em;
+}
+
+a h1 {
+  font-size: 1em;
+}
+
+.banner a {
+  text-decoration: none;
+  color: #2F2B2B;
+  font-size: 0.7em;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+a h1, .banner-message, .banner p {
+  margin: 0;
+}
+
+/* *** RESPONSIVENESS *** */
+@media screen and (min-width: 576px) {
+  .banner-message {
+    font-size: 1.8em;
+  }
+
+  a h1 {
+    font-size: 1.2em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
+}
