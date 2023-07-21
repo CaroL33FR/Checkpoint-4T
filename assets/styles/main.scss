@@ -5,28 +5,23 @@
 }
 
 body {
-  background-color: darkgray;
+  background-color: antiquewhite;
+  position: relative;
 }
 
-/* HOME PAGE */
-.ckpt4-logo-card-img-top {
-
+a.ckpt4-back-to-list, a.ckpt4-edit {
+  color: black;
 }
-/*
-.ckpt4-ensemble {
-  height: 30vh;
-  width: 60%;
-  opacity: 45%;
-  background-size: cover;
-  background-position: center;
+/* HOME PAGE bootstrap cards customized */
+
+.ckpt4-card-body {
+  background-color: #944646;
+  opacity: 10%;
 }
 
-*/
-
-
-/* home page cards bootstrap customized */
-.ckpt4-row {
-  justify-content: center;
+.ckpt4-card-header, .ckpt4-card-footer {
+  background-color: #2F2B2B;
+  opacity: 20%;
 }
 
 h5.ckpt4-card-title {
@@ -34,40 +29,39 @@ h5.ckpt4-card-title {
   margin: 0;
   font-size: 3em;
 }
-
+/*
 div.card.text-center {
-  background-color: #2F2B2B;
   border: solid 2px #944646;
   border-radius: 10px;
-
 }
-
+*/
 a.ckpt4-ensemble.btn {
   border: solid 1px grey;
 }
 
 .ckpt4-card-body {
-  background-color: pink;
+
+}
+
+/* PAGINATION */
+ul.pagination {
+position: center;
 }
 
 .pagination {
   position: fixed;
-  bottom: 25vh;
 
+  bottom: 25vh;
 }
 
-nav.pagination
- {
+nav.pagination {
   text-align: center;
 }
 
-/* RESPONSIVENESS */
+/* *** RESPONSIVENESS *** */
 @media screen and (min-width: 576px) {
   h5.ckpt4-card-title {
     font-size: 6em;
   }
 
-  h5.footer .footer-contact {
-    font-size: 1.8em;
-  }
 }

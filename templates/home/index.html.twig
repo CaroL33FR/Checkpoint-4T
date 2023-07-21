@@ -3,102 +3,53 @@
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
-<body>
+    <body>
 
-{# STARTS: BOOTSTRAP CARDS WITH TEXT BELOW#}
-    {# STARTS: CARD1 #}
-
-{#
-        <div class="card mb-3">
-            <img src="{{ asset('build/images/meal_1_unsplash.jpg') }}" class="ckpt4-ensemble logo-card-img-top" alt="...">
+    <section class="ckpt4-row col-sm-8">
+        <div class="ckpt4-card text-center">
+            <div class="ckpt4-card-header">
+            </div>
             <div class="ckpt4-card-body">
-                <h5 class="card-title">NOUS</h5>
-                <p class="card-text">Découvrez le cadre de vie de Wild Home, son histoire et les personnes qui font la vie de l'établissement.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <a href="{{ path('app_construction') }}" class="ckpt4-ensemble btn">
+                    <h5 class="ckpt4-card-title">NOUS</h5>
+                </a>
+            </div>
+            <div class="ckpt4-card-footer text-muted">
             </div>
         </div>
+    </section>
 
-#}
-    {# ENDS: CARD1 #}
-    {# STARTS: CARD2 #}
-
-{#
-        <div class="card">
-            <div class="ckpt4-card-body">
-                <h5 class="card-title">VOUS</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <section class="ckpt4-row col-sm-8">
+        <div class="ckpt4-card text-center">
+            <div class="ckpt4-card-header">
+                Featured
             </div>
-            <img src="{{ asset('build/images/meal_2_unsplash.jpg') }}" class="ckpt4-ensemble card-img-bottom" alt="...">
-        </div>
-    {# ENDS: CARD2 #}
-    {# STARTS: CARD3 #}
-
-{#
-        <div class="card">
             <div class="ckpt4-card-body">
-                <h5 class="card-title">ENSEMBLE</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <a href="{{ path('app_construction') }}" class="ckpt4-ensemble btn">
+                    <h5 class="ckpt4-card-title">VOUS</h5>
+                </a>
             </div>
-            <img src="{{ asset('build/images/meal_3_unsplash.jpg') }}" class="ckpt4-ensemble card-img-bottom" alt="...">
+            <div class="ckpt4-card-footer text-muted">
+                2 days ago
+            </div>
         </div>
+    </section>
 
-#}
-    {# STARTS: CARD3 #}
-{# ENDS: BOOTSTRAP CARDS WITH TEXT BELOW #}
+    <section class="ckpt4-row col-sm-8">
+        <div class="ckpt4-card text-center">
+            <div class="ckpt4-card-header">
+                Featured
+            </div>
+            <div class="ckpt4-card-body">
+                <a href="{{ path('app_construction') }}" class="ckpt4-ensemble btn">
+                    <h5 class="ckpt4-card-title">ENSEMBLE</h5>
+                </a>
+            </div>
+            <div class="ckpt4-card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+    </section>
 
-<section class="ckpt4-row col-sm-8">
-    <div class="card text-center">
-        <div class="card-header">
-            Featured
-        </div>
-        <div class="ckpt4-card-body">
-            <a href="{{ path('app_construction') }}" class="ckpt4-ensemble btn">
-                <h5 class="ckpt4-card-title">NOUS</h5>
-            </a>
-        </div>
-        <div class="card-footer text-muted">
-            2 days ago
-        </div>
-    </div>
-</section>
-{#
-<div class="row">
-    <div class="col-sm-6">
-        <div class="card">
-#}
-<section class="ckpt4-row col-sm-8">
-    <div class="card text-center">
-        <div class="card-header">
-            Featured
-        </div>
-        <div class="ckpt4-card-body">
-            <a href="{{ path('app_construction') }}" class="ckpt4-ensemble btn">
-                <h5 class="ckpt4-card-title">VOUS</h5>
-            </a>
-        </div>
-        <div class="card-footer text-muted">
-            2 days ago
-        </div>
-    </div>
-</section>
-
-<section class="ckpt4-row col-sm-8">
-    <div class="card text-center">
-        <div class="card-header">
-            Featured
-        </div>
-        <div class="ckpt4-card-body">
-            <a href="{{ path('app_construction') }}" class="ckpt4-ensemble btn">
-                <h5 class="ckpt4-card-title">ENSEMBLE</h5>
-            </a>
-        </div>
-        <div class="card-footer text-muted">
-            2 days ago
-        </div>
-    </div>
-</section>
-
-</body>
+    </body>
 {% endblock %}
