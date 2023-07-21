@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Resident{% endblock %}
+
+{% block body %}
+    <h1>Resident</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ resident.id }}</td>
+            </tr>
+            <tr>
+                <th>Lastname</th>
+                <td>{{ resident.lastname }}</td>
+            </tr>
+            <tr>
+                <th>Firstname</th>
+                <td>{{ resident.firstname }}</td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>{{ resident.gender }}</td>
+            </tr>
+            <tr>
+                <th>Birthday</th>
+                <td>{{ resident.birthday }}</td>
+            </tr>
+            <tr>
+                <th>Room</th>
+                <td>{{ resident.room }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_resident_index') }}" class="ckpt4-back-to-list">Retour à la liste</a>
+
+    <a href="{{ path('app_resident_edit', {'id': resident.id}) }}" class="ckpt4-edit">Editer</a>
+
+    {{ include('resident/_delete_form.html.twig') }}
+{% endblock %}

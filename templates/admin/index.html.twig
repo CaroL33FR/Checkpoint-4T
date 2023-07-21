@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminController!{% endblock %}
+
+{% block body %}
+
+    <div class="example-wrapper">
+        <h1>Affichage de tous les résidents de l'établissement</h1>
+    {% for resident in residents %}
+        <div>
+            <p>{{ loop.index }} / {{ resident.lastname }}  {{ resident.firstname }}  {{ resident.gender }} {{ resident.birthday }} {{ resident.room }}</p>
+        </div>
+    {% endfor %}
+
+    </div>
+{% endblock %}

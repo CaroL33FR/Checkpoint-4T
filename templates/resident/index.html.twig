@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Resident index{% endblock %}
+
+{% block body %}
+    <h1>Resident index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Lastname</th>
+                <th>Firstname</th>
+                <th>Gender</th>
+                <th>Birthday</th>
+                <th>Room</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for resident in residents %}
+            <tr>
+                <td>{{ resident.id }}</td>
+                <td>{{ resident.lastname }}</td>
+                <td>{{ resident.firstname }}</td>
+                <td>{{ resident.gender }}</td>
+                <td>{{ resident.birthday }}</td>
+                <td>{{ resident.room }}</td>
+                <td>
+                    <a href="{{ path('app_resident_show', {'id': resident.id}) }}">show</a>
+                    <a href="{{ path('app_resident_edit', {'id': resident.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{# STARTS: PAGINATION #}
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+{# ENDS: PAGINATION #}
+
+    <a href="{{ path('app_resident_new') }}">Create new</a>
+
+
+{% endblock %}

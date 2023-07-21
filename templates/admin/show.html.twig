@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Résident {{ resident.lastname }} {{ resident.firstname }}{% endblock %}
+
+{% block body %}
+
+    <div class="example-wrapper">
+        <h1>Affichage de la fiche du {{ resident.lastname }} {{ resident.firstname }}</h1>
+        <ul>
+            <li>Résident occupant la chambre : {{ resident.room}}</li>
+            <li>Identifiant : {{ resident.id }}</li>
+            <li>Genre : {{ resident.gender }}</li>
+            <li>Date de naissance : {{ resident.birthday }}</li>
+        </ul>
+
+    </div>
+{% endblock %}
